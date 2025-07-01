@@ -1,4 +1,3 @@
-import CardGrid from "../../components/CardGrid";
 import PublicationCard from "../../components/PublicationCard";
 import { getPublicationsSync } from "../../lib/content";
 
