@@ -1,4 +1,3 @@
-import CardGrid from "../../components/CardGrid";
 import RepoCard from "../../components/RepoCard";
 import { getProjectsSync } from "../../lib/content";
 
