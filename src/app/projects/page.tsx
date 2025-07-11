@@ -1,5 +1,7 @@
 import RepoCard from "../../components/RepoCard";
 import { getProjectsSync } from "../../lib/content";
+import { Button } from "../../components/ui/button";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function ProjectsPage() {
   const projects = getProjectsSync();
@@ -16,10 +18,28 @@ export default function ProjectsPage() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects.map((project) => (
             <RepoCard key={project.name} repository={project} />
           ))}
+        </div>
+
+        <div className="text-center">
+          <Button 
+            asChild 
+            variant="outline" 
+            className="flex items-center gap-2 px-6 py-3"
+          >
+            <a 
+              href="https://github.com/aaggarw99" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Github className="w-4 h-4" />
+              View My GitHub
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </Button>
         </div>
       </div>
     </main>

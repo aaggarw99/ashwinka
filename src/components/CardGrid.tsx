@@ -7,6 +7,7 @@ interface CardGridProps {
   viewAllHref?: string;
   viewAllText?: string;
   background?: "light" | "white";
+  centerItems?: boolean;
 }
 
 export default function CardGrid({ 
@@ -15,9 +16,13 @@ export default function CardGrid({
   children, 
   viewAllHref, 
   viewAllText = "View All",
-  background = "white"
+  background = "white",
+  centerItems = false
 }: CardGridProps) {
   const bgClass = background === "light" ? "bg-gray-50" : "bg-white";
+  const gridClass = centerItems 
+    ? "flex flex-col md:flex-row gap-6 mb-8 justify-center items-center max-w-4xl mx-auto"
+    : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8";
   
   return (
     <section className={`w-full py-12 ${bgClass}`}>
@@ -31,7 +36,7 @@ export default function CardGrid({
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className={gridClass}>
           {children}
         </div>
         
