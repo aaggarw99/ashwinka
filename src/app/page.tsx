@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import AboutCards from "../components/AboutCards";
+import CareerHighlights from "../components/CareerHighlights";
 import CardGrid from "../components/CardGrid";
 import PublicationCard from "../components/PublicationCard";
 import RepoCard from "../components/RepoCard";
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <AboutCards />
+      <CareerHighlights />
 
       <CardGrid 
         title="GitHub Repositories" 
@@ -32,6 +34,7 @@ export default function Home() {
         viewAllHref="/publications"
         viewAllText="View All Publications"
         background="white"
+        centerItems={true}
       >
         {publications.map((publication) => (
           <PublicationCard key={publication.title} publication={publication} />

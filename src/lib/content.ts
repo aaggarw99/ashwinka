@@ -6,6 +6,8 @@ export interface Publication {
   context: string;
   year: number;
   views: number;
+  url: string;
+  authorPosition: string;
 }
 
 export interface Repository {
