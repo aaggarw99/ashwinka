@@ -5,7 +5,7 @@ import { ResearchSection } from "@/components/research-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { ContactSection } from "@/components/contact-section"
 /* Added footer import */
-import { Footer } from "@/components/footer"
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
