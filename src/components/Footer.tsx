@@ -1,27 +1,27 @@
-import Link from "next/link";
+import { ContentWrapper } from "@/components/content-wrapper"
 
-const navLinks = [
-  { href: "/#about", label: "About" },
-  { href: "/publications", label: "Publications" },
-  { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "Contact" },
-];
-
-export default function Footer() {
+export function Footer() {
+  
   return (
-    <footer className="w-full bg-[#f8f9fa] py-8 px-4 flex flex-col items-center gap-4 mt-16">
-      <div className="flex gap-6 flex-wrap justify-center">
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="text-gray-600 hover:text-primary text-sm transition-colors"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
-      <div className="text-xs text-gray-400">© Ashwin Aggarwal 2025</div>
+    <footer className="bg-muted py-8">
+      <ContentWrapper>
+        <div className="flex flex-col items-center space-y-4">
+          <div className="flex items-center space-x-2">
+            <span className="text-red-500 text-xl">★</span>
+            <span className="text-red-500 text-xl">★</span>
+            <span className="text-red-500 text-xl">★</span>
+            <span className="text-red-500 text-xl">★</span>
+          </div>
+
+          <div className="text-center space-y-2">
+            <p className="font-sans text-foreground font-medium">{`{ Ashwin Aggarwal }`}</p>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Ashwin Aggarwal. All rights reserved.
+            </p>
+            <p className="text-xs text-muted-foreground">Available for contract website development</p>
+          </div>
+        </div>
+      </ContentWrapper>
     </footer>
-  );
+  )
 }
