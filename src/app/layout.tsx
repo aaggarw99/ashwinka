@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Ashwin Aggarwal - Software Engineer",
   description: "Portfolio of Ashwin Aggarwal, Software Engineer",
   generator: "v0.app",
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
