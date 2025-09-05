@@ -8,13 +8,13 @@ const experiences = [
     company: "Waymo",
     period: "September 2025 - Present",
     description:
-      "Led development of scalable web applications serving millions of users. Architected microservices infrastructure and mentored junior developers.",
+      "Software Engineer at Waymo on the Simulation Realism team, working to enhance the fidelity of virtual environments and vehicle behavior models to better reflect real-world driving scenarios.",
     technologies: ["React", "Node.js", "AWS", "TypeScript"],
     logo: "/waymo-logo.png",
   },
   {
     title: "Software Engineer",
-    company: "Salesforce",
+    company: "Salesforce • Health Cloud",
     period: "July 2023 - August 2025",
     description:
       "Led full-stack development of Intelligent Appointment Management, architected GenAI products, and built FHIR-compliant middleware for EHR integration.",
@@ -23,7 +23,7 @@ const experiences = [
   },
   {
     title: "Software Engineer Intern",
-    company: "Salesforce",
+    company: "Salesforce • Marketing Cloud",
     period: "May 2021 - Aug 2022",
     description:
       "Developed anomaly detectors, automated feedback software, and data pipelines for release health monitoring.",

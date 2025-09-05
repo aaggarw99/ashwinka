@@ -18,7 +18,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Ashwin Aggarwal. All rights reserved.
             </p>
-            <p className="text-xs text-muted-foreground">Available for contract website development</p>
+            <p className="text-xs text-muted-foreground">I sometimes take on one-off web contracts, drop me an email if you&apos;d like to collaborate!</p>
           </div>
         </div>
       </ContentWrapper>
