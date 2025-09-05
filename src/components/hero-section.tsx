@@ -3,7 +3,7 @@ import { ContentWrapper } from "@/components/content-wrapper"
 
 export function HeroSection() {
   return (
-    <section id="hero" className="min-h-screen bg-card flex items-start justify-center pt-48">
+    <section id="hero" className="min-h-screen bg-card flex items-start justify-center pt-[25vh]">
       <ContentWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}

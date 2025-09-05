@@ -7,10 +7,10 @@ export function Footer() {
       <ContentWrapper>
         <div className="flex flex-col items-center space-y-4">
           <div className="flex items-center space-x-2">
-            <span className="text-red-500 text-xl">★</span>
-            <span className="text-red-500 text-xl">★</span>
-            <span className="text-red-500 text-xl">★</span>
-            <span className="text-red-500 text-xl">★</span>
+            <span className="text-red-500 text-xl">✶</span>
+            <span className="text-red-500 text-xl">✶</span>
+            <span className="text-red-500 text-xl">✶</span>
+            <span className="text-red-500 text-xl">✶</span>
           </div>
 
           <div className="text-center space-y-2">
